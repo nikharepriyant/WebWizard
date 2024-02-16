@@ -30,6 +30,7 @@ header {
     height: auto;
     display: block;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -63,8 +64,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff; /* Add a border to create the line effect */
-    padding-bottom: 5px; /* Adjust padding as needed */
+    border-bottom: 1px solid #fff;
+    /* Add a border to create the line effect */
+    padding-bottom: 5px;
+    /* Adjust padding as needed */
 }
 
 .nav-links {
@@ -79,7 +82,8 @@ header {
 }
 
 .nav-links li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
+    margin-right: 0;
+    /* Remove margin from the last item */
 }
 
 .nav-links li a {
@@ -88,7 +92,8 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #ccc; /* Adjust color on hover as needed */
+    color: #ccc;
+    /* Adjust color on hover as needed */
 }
 
 @media (max-width: 768px) {
@@ -144,6 +149,7 @@ header {
 .course-menu li a:hover {
     color: #555;
 }
+
 .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -183,7 +189,8 @@ header {
 }
 
 .course-heading {
-    margin-bottom: 20px; /* Add some space between heading and menu */
+    margin-bottom: 20px;
+    /* Add some space between heading and menu */
 }
 
 .course-grid {
@@ -198,7 +205,8 @@ header {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    width: 200px; /* Set fixed width for each course card */
+    width: 200px;
+    /* Set fixed width for each course card */
 }
 
 .course-card h3 {
@@ -265,7 +273,8 @@ header {
 }
 
 .course-heading {
-    text-align: left; /* Align heading to the left */
+    text-align: left;
+    /* Align heading to the left */
 }
 
 .course-menu {
@@ -274,12 +283,14 @@ header {
 }
 
 .course-menu li {
-    display: inline-block; /* Display menu items inline */
+    display: inline-block;
+    /* Display menu items inline */
     margin-right: 10px;
 }
 
 .course-menu li:last-child {
-    margin-right: 0; /* Remove margin from the last item */
+    margin-right: 0;
+    /* Remove margin from the last item */
 }
 
 .course-menu li a {
@@ -290,12 +301,15 @@ header {
 
 .course-grid {
     display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if there's not enough space */
-    gap: 20px; /* Add some space between cards */
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line if there's not enough space */
+    gap: 20px;
+    /* Add some space between cards */
 }
 
 .course-card {
-    flex: 1 1 200px; /* Set a flexible width for each card */
+    flex: 1 1 200px;
+    /* Set a flexible width for each card */
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -303,10 +317,12 @@ header {
 
 .course-card h3 {
     margin-top: 0;
-    text-align: left; /* Align heading to the left */
+    text-align: left;
+    /* Align heading to the left */
 }
 
 .course-card p {
     margin-bottom: 0;
-    text-align: left; /* Align paragraph to the left */
+    text-align: left;
+    /* Align paragraph to the left */
 }
