@@ -380,3 +380,48 @@ p:last-child {
     background-color: #f9f9f9;
     padding: 40px 0;
 }
+/* Add borders to sections */
+.bordered-section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Add trendy animations and effects */
+.bordered-section:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Card layout for each section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Animation for borders */
+@keyframes borderAnimation {
+    0% {
+        border-width: 0;
+    }
+    100% {
+        border-width: 1px;
+    }
+}
