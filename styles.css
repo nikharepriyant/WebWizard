@@ -326,3 +326,57 @@ header {
     text-align: left;
     /* Align paragraph to the left */
 }
+
+/* Container styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Problem Statement and Description styles */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+b,
+u {
+    color: #007bff;
+    /* Blue color for bold and underlined text */
+}
+
+/* Key Features styles */
+p>b>u {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Key Features list styles */
+p>b>u+br {
+    display: none;
+    /* Hide line breaks after Key Features headings */
+}
+
+/* Summary styles */
+p:last-child {
+    font-style: italic;
+}
+
+/* Section background and spacing */
+.section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
