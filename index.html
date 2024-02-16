@@ -8,34 +8,84 @@
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="brand">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#course-menu">Courses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="course-menu" class="section">
         <div class="container">
-            <a href="#" class="brand">WebWizard</a>
-            <button class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="navbar-menu">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <h2>Courses</h2>
+            <ul class="course-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#lectures">Lectures</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <h3>HTML</h3>
+                    <p>Learn the basics of HTML.</p>
+                </div>
+                <div class="course-card">
+                    <h3>CSS</h3>
+                    <p>Explore styling with CSS.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Java</h3>
+                    <p>Introduction to Java programming language.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Python</h3>
+                    <p>Get started with Python programming.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Data Structures</h3>
+                    <p>Learn about fundamental data structures.</p>
+                </div>
+                <div class="course-card">
+                    <h3>DBMS</h3>
+                    <p>Introduction to Database Management Systems.</p>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
-
-<section id="about" class="section">
-    <div class="container">
-        <h2>About</h2>
-        <p>
-            Insert your about section content here. Describe the purpose of WebWizardPROTOTYPE and its goals in improving education.
-        </p>
-    </div>
-</section>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>
+                Welcome to , a platform designed to revolutionize education through innovative tools and solutions. Our mission is to provide capacity building, performance assessment, and motivation-driven tools for faculty upgradation.
+            </p>
+            <p>
+                At WebWizardPROTOTYPE, we believe in empowering educators and students alike. Our Learning Management System (LMS) enables teachers to create personalized, interactive courses from content provided by a range of publishers. Students can access these courses on any device, and the LMS keeps a record of their progress. If students encounter difficulties, the course can be quickly adjusted to meet their needs. Additionally, we offer game-based learning features to combat boredom and engage students in the learning process.
+            </p>
+            <p>
+                Furthermore, our platform provides ERP solutions tailored for teachers. These solutions include credit mechanisms for appraisals and performance-based incentives. We understand the importance of supporting teachers in their professional development and aim to provide them with the tools they need to excel in their roles.
+            </p>
+        </div>
+    </section>
+    
 
 <section id="features" class="section">
     <div class="container">
@@ -43,16 +93,21 @@
         <div class="feature">
             <h3>Learning Management System (LMS)</h3>
             <p>
-                Insert your LMS feature description here. Explain how teachers can create personalized courses, track student progress, and utilize gamification.
+                Allow teachers to create personalized interactive courses from content provided by a range of publishers.
+            </p>
+            <p>
+                Students can then access these courses on any device, while the app keeps a record of how they are progressing.
+            </p>
+            <p>
+                If students are struggling, the course can quickly be altered. If students struggle with boredom, game-based learning can be introduced with LMS.
             </p>
         </div>
         <div class="feature">
             <h3>ERP Solutions for Teachers</h3>
             <p>
-                Insert your ERP feature description here. Describe how teachers can receive performance-based incentives and appraisals.
+                ERP solutions for the teachers with adequate credit mechanisms which can be used for appraisals and performance-based incentives to the teachers.
             </p>
         </div>
-        <!-- Add more features here -->
     </div>
 </section>
 
@@ -65,6 +120,8 @@
     </div>
 </section>
 
+
+
 <footer>
     <div class="container">
         <p>&copy; 2024 WebWizardPROTOTYPE. All rights reserved.</p>
@@ -72,5 +129,11 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+    function toggleMenu() {
+        var navbarMenu = document.getElementById('navbarMenu');
+        navbarMenu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

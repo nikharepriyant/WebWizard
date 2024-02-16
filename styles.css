@@ -12,6 +12,7 @@ header {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,4 +86,48 @@ header {
     .nav-links li {
         margin: 10px 0;
     }
+
+    .brand img {
+        margin-bottom: 10px;
+    }
+}
+
+.course-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-menu li {
+    margin-bottom: 10px;
+}
+
+.course-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.course-menu li a:hover {
+    color: #555;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    margin-bottom: 0;
 }
