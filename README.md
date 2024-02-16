@@ -15,5 +15,5 @@ Points:
         --6 Credit mechanism...
 
 
-        <li style="display: inline-block; margin-right: 10px;"><a href="#" style="text-decoration: none; color: #333; padding: 5px;">Home</a></li>
+        https://walayhs.github.io/WebWizard/contact.html
                     
