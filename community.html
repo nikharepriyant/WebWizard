@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .community-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .community-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .community-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px);
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .community-item:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                
+                <a href="#" class="brand">
+                    <div class="circular-image">
+                        <img src="Images/deathly-hallows.jpg" alt="Logo">
+                    </div>
+                </a>
+                <button class="navbar-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="#feedback-menu">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="Login">
+                    <button>
+                        <a href="login.html">Login/Register</a>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="community-header">
+            <h1>Join Our Community</h1>
+            <p>Connect with educators, share ideas, and collaborate to enhance teaching and learning experiences.</p>
+        </div>
+
+        <div class="community-list">
+            <div class="community-item">
+                <h2>Discussion Forums</h2>
+                <p>Engage in conversations, ask questions, and share best practices with fellow educators.</p>
+            </div>
+            <div class="community-item">
+                <h2>Networking Events</h2>
+                <p>Attend virtual meetups, workshops, and conferences to expand your professional network.</p>
+            </div>
+            <div class="community-item">
+                <h2>Collaborative Projects</h2>
+                <p>Join hands-on projects and initiatives to create innovative solutions for education challenges.</p>
+            </div>
+            <div class="community-item">
+                <h2>Resource Sharing</h2>
+                <p>Discover and contribute educational resources, lesson plans, and teaching materials.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
