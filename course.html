@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+
+        .brand {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .navbar-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: #fff;
+            margin: 5px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #fff;
+            /* Add a border to create the line effect */
+            padding-bottom: 5px;
+            /* Adjust padding as needed */
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links li:last-child {
+            margin-right: 0;
+            /* Remove margin from the last item */
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-links li a:hover {
+            color: #ccc;
+            /* Adjust color on hover as needed */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar-toggle {
+                display: flex;
+            }
+
+            .navbar-menu {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .navbar-menu.active {
+                display: flex;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .brand img {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Styles for the footer */
+        footer {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.brand img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.course-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-menu li {
+    margin-bottom: 10px;
+}
+
+.course-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.course-menu li a:hover {
+    color: #555;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.course-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    font-size: 14px;
+}
+
+.course-image {
+
+    width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-heading {
+    margin-bottom: 20px;
+    /* Add some space between heading and menu */
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    /* Set fixed width for each course card */
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    margin-bottom: 0;
+}
+
+.course-card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.course-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    font-size: 14px;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+}
+
+.course-card::after {
+    content: '';
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-heading {
+    text-align: left;
+    /* Align heading to the left */
+}
+
+.course-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-menu li {
+    display: inline-block;
+    /* Display menu items inline */
+    margin-right: 10px;
+}
+
+.course-menu li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last item */
+}
+
+.course-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line if there's not enough space */
+    gap: 20px;
+    /* Add some space between cards */
+}
+
+.course-card {
+    flex: 1 1 200px;
+    /* Set a flexible width for each card */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    text-align: left;
+    /* Align heading to the left */
+}
+
+.course-card p {
+    margin-bottom: 0;
+    text-align: left;
+    /* Align paragraph to the left */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="brand">
+                    <img src="Images/deathly-hallows.jpg" alt="Logo">
+                    
+                </a>
+                <button class="navbar-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu" id="navbarMenu">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#course-menu">Courses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="course-menu" class="section">
+
+        <div class="container">
+            <div class="container">
+                <h2 class="course-heading">Courses</h2>
+                <ul class="course-menu">
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="text-decoration: none; color: #333; padding: 5px;">Overview</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="text-decoration: none; color: #333; padding: 5px;">Lecture</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="text-decoration: none; color: #333; padding: 5px;">Assignment</a></li>
+                    <li style="display: inline-block; margin-right: 10px;"><a href="#"
+                            style="text-decoration: none; color: #333; padding: 5px;">Overview</a></li>
+                </ul>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card">
+
+                    <h3>HTML</h3>
+                    <p>Learn the basics of HTML.</p>
+                    <img src="Images/HTML.jpeg" alt="HTML" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>CSS</h3>
+                    <p>Explore styling with CSS.</p>
+                    <img src="Images/CSS.png" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>Java</h3>
+                    <p>Introduction to Java programming language.</p>
+                    <img src="Images/Java.jpeg" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>Python</h3>
+                    <p>Get started with Python programming.</p>
+                    <img src="Images/Python.jpeg" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>C++</h3>
+                    <p>Introduction to C++ programming language.</p>
+                    <img src="Images/Cpp.png" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>DBMS</h3>
+                    <p>Introduction to Database Management Systems.</p>
+                    <img src="Images/DBMS.png" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>Data Structures</h3>
+                    <p>Learn about fundamental data structures.</p>
+                    <img src="Images/Data Structures.png" alt="CSS" class="course-image">
+                </div>
+                <div class="course-card">
+                    <h3>Data Science</h3>
+                    <p>Introduction to Data Science.</p>
+                    <img src="Images/Data Science.png" alt="CSS" class="course-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Web_Wizards Education. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var navbarMenu = document.getElementById('navbarMenu');
+            navbarMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
