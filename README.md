@@ -13,4 +13,7 @@ Points:
         --4 If students struggle with boredom, game-based learning can be introduced with LMS. Although granting teachers access to tablets and smart boards may help boost their comfort with education technology, many teachers simply have not thought about how they can best utilize technology in their curriculum.
         --5  ERP solutions for the teachers with adequate credit mechanisms which can be used for appraisals and performance-based incentives to the teachers.
         --6 Credit mechanism...
-        
+
+
+        <li style="display: inline-block; margin-right: 10px;"><a href="#" style="text-decoration: none; color: #333; padding: 5px;">Home</a></li>
+                    
