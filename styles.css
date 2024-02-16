@@ -17,6 +17,15 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.course-heading {
+    margin-right: 20px; /* Add some space between heading and menu */
+}
+
 
 .brand {
     color: #fff;
@@ -39,6 +48,10 @@ header {
 
 .navbar-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff; /* Add a border to create the line effect */
+    padding-bottom: 5px; /* Adjust padding as needed */
 }
 
 .nav-links {
@@ -52,9 +65,17 @@ header {
     margin-right: 20px;
 }
 
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
 .nav-links li a {
     color: #fff;
     text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #ccc; /* Adjust color on hover as needed */
 }
 
 @media (max-width: 768px) {
@@ -130,4 +151,93 @@ header {
 
 .course-card p {
     margin-bottom: 0;
+}
+/* Existing CSS remains unchanged */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-heading {
+    margin-bottom: 20px; /* Add some space between heading and menu */
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Set fixed width for each course card */
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    margin-bottom: 0;
+}
+
+/* Existing CSS remains unchanged */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-heading {
+    text-align: left; /* Align heading to the left */
+}
+
+.course-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-menu li {
+    display: inline-block; /* Display menu items inline */
+    margin-right: 10px;
+}
+
+.course-menu li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.course-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if there's not enough space */
+    gap: 20px; /* Add some space between cards */
+}
+
+.course-card {
+    flex: 1 1 200px; /* Set a flexible width for each card */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.course-card h3 {
+    margin-top: 0;
+    text-align: left; /* Align heading to the left */
+}
+
+.course-card p {
+    margin-bottom: 0;
+    text-align: left; /* Align paragraph to the left */
 }
