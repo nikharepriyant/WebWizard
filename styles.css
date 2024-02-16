@@ -17,13 +17,26 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circular-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .container {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 .course-heading {
-    margin-right: 20px; /* Add some space between heading and menu */
+    margin-right: 20px;
 }
 
 
@@ -139,10 +152,13 @@ header {
 }
 
 .course-card {
+    width: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
+    overflow: hidden;
 }
 
 .course-card h3 {
@@ -150,9 +166,15 @@ header {
 }
 
 .course-card p {
-    margin-bottom: 0;
+    font-size: 14px;
 }
-/* Existing CSS remains unchanged */
+
+.course-image {
+
+    width: 100%;
+    height: auto;
+}
+
 
 .container {
     display: flex;
@@ -187,7 +209,54 @@ header {
     margin-bottom: 0;
 }
 
-/* Existing CSS remains unchanged */
+.course-card {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.course-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card p {
+    font-size: 14px;
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+}
+
+.course-card::after {
+    content: '';
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 .container {
     max-width: 1200px;
